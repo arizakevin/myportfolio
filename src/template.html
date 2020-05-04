@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="https://img.icons8.com/color/96/000000/developer.png"/>
+    <title>Kevin Ariza | Web Developer</title>
+    <meta name="keywords" content="kevwas, Kevin Ariza, Web Developer" />
+    <!-- Improve your SEO by adding a small descrption of you -->
+    <meta name="description" content="Kevin Ariza | Web Developer" />
+
+    <!-- Required librarys -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({ reset: false });
+    </script>
+    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  </head>
+
+  <body>
+    <div id="top"></div>
+
+    <!-- **** Hero Section **** -->
+    <div id="hero" class="jumbotron">
+      <div class="container">
+        <h1 class="hero-title" class="load-hidden">
+          Hi, my name is <span class="text-color-main">Kevin Ariza</span>.
+        </h1>
+        <h3 class="hero-sub" class="load-hidden">
+          I build responsive, functional, and beutiful websites.
+          <br />
+        </h3>
+        
+        <p class="hero-cta" class="load-hidden">
+          <a class="cta-btn cta-btn--hero" href="#about">Know more</a>
+        </p>
+      </div>
+    </div>
+    <!-- /END Hero Section -->
+
+    <!-- **** About Section **** -->
+
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">
+          About me
+        </h2>
+        <div id="particles-js"></div>
+        <div class="row about-wrapper">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__image">
+              <img
+                data-tilt
+                class="img-fluid rounded shadow-lg"
+                height="auto"
+                width="250px"
+                src="./assets/profile.jpg"
+                alt="Profile Image"
+              />
+            </div>
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="about-wrapper__info">
+              <p class="about-wrapper__info-text">
+                I am a Full Stack JavaScript Developer passionate about science, technology and challenges. Always eager for learning new things while I work on projects in order to get better and contribute with the community.
+              </p>
+              <p class="about-wrapper__info-text">
+                I love music and, when not programming, I spend time with my family, reading or riding my bike.
+              </p>
+              <span class="d-flex mt-3">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://drive.google.com/file/d/1NqM7RPpdXzUr33ivnq3pokJNgRePW-I3/view?usp=sharing">
+                  View Resume
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END About Section -->
+
+    <!-- **** Projects Section **** -->
+    <section id="projects">
+      <div class="container">
+        <div class="project-wrapper">
+          <h2 class="section-title dark-blue-text">
+            Projects
+          </h2>
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Covid-19 Charts</h3>
+                <div>
+                  <p class="mb-4">
+                    Wanting to craft a good app with charts and looking to help the community in the current world situation, I've built a web app that shows simple and clear charts of COVID-19 global figures, I made it with ReacJS and ChartJS, using the amazing API that Kyle Redelinghuys and Kyle Hauptfleisch built.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://covid19charts-641f3.firebaseapp.com/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Kevwas/covid19charts">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://covid19charts-641f3.firebaseapp.com/" target="_blank">
+                    <img data-tilt
+                      class="img-fluid thumbnail rounded" 
+                      height="auto"
+                      width="350px"
+                      src="./assets/covid19charts.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Recipes App</h3>
+                <div>
+                  <p class="mb-4">
+                    This is a web app of recipes in which I used the spoonacular API to fetch the data. I built it using ReactJS, ExpressJS, and PostgreSQL. The user can register and save its favorites recipes in its account.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://delicious-recipe.herokuapp.com/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Kevwas/Recipes-app">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://delicious-recipe.herokuapp.com/" target="_blank">
+                    <img data-tilt
+                      class="img-fluid thumbnail rounded" 
+                      height="auto"
+                      width="350px"
+                      src="./assets/recipes.png" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <section id="technologies">
+      <div class="container">
+        <h2 class="section-title dark-blue-text">
+            Technologies and Tools
+        </h2>
+        <div class="technology-wrapper">
+              <div className='box'>
+              <img data-tilt
+                   class="icon"
+                   src="https://img.icons8.com/color/100/000000/html-5.png"
+              />
+              <h3 class="name">HTML5</h3>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon"
+                   src="https://img.icons8.com/color/100/000000/css3.png"
+              />
+              <h3 class="name">CSS3</h3>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon"
+                   src="https://img.icons8.com/color/100/000000/javascript.png"
+              />
+              <p class="name">JavaScript</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon"
+                   src="https://img.icons8.com/color/100/000000/react-native.png"
+              />
+              <p class="name">ReactJS</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/officel/100/000000/doughnut-chart.png"
+              />
+              <p class="name">ChartJS</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon"
+                   src="https://img.icons8.com/color/100/000000/nodejs.png"
+              />
+              <p class="name">NodeJS</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/npm.png"
+              />
+              <p class="name">NPM</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/command-line.png"
+              />
+              <p class="name">CMD</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/postgreesql.png"
+              />
+              <p class="name">PostgreSQL</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/github--v1.png"
+              />
+              <p class="name">GitHub</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/git.png"
+              />
+              <p class="name">Git</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/heroku.png"
+              />
+              <p class="name">Heroku</p>
+              </div>
+
+              <div className='box'>
+              <img data-tilt
+                   class="icon" 
+                   src="https://img.icons8.com/color/100/000000/trello.png"
+              />
+              <p class="name">Trello</p>
+              </div>
+        </div>
+      </div>
+    </section>
+    <!-- /END Projects Section -->
+
+    <!-- **** Contact Section **** -->
+    <section id="contact">
+      <div class="container">
+        <h2 class="section-title">
+          Thanks!
+        </h2>
+        <div class="contact-wrapper">
+          <p class="contact-wrapper__text">
+            Want to say hello?
+          </p>
+          <a
+            target="_blank"
+            class="cta-btn cta-btn--resume"
+            href="mailto:kevinwarizas@gmail.com"
+            >CONTACT ME</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /END Contact Section -->
+
+    <!-- **** Footer Section **** -->
+    <footer class="footer navbar-static-bottom">
+      
+      <div class="container">
+        <a href="#top" class="back-to-top">
+          <i class="fa fa-angle-up fa-2x" aria-hidden="true"></i>
+        </a>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/kevinwarizas/" target="_blank">
+            <i class="fa fa-linkedin fa-inverse"></i>
+          </a>
+          <a href="https://github.com/Kevwas/" target="_blank">
+            <i class="fa fa-github fa-inverse"></i>
+          </a>
+        </div>
+        <hr />
+        <script type="text/javascript">
+          particlesJS.load('particles-js', '../public/assets/parti-cfg.json', function() {
+            console.log('callback - particles.js config loaded');
+          });
+        </script>        
+  </body>
+</html>
