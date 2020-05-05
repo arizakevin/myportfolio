@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html {
-  font-size: 62.5%;
+  font-size: 55%;
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
@@ -12,4 +14,11 @@ body {
     width:100%;
     height:80%;
     z-index:0;
+}
+
+.gradient {
+	background: rgb(241,255,254);
+background: radial-gradient(circle, rgba(241,255,254,1) 15%, rgba(227,217,230,1) 68%, rgba(221,221,221,1) 95%) no-repeat fixed center;
+  	-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;
 }

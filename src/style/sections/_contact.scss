@@ -36,5 +36,16 @@
         font-size: 2rem;
       }
     }
+
+    .button {
+      font-size: 1.8rem;
+    }
+
+    &__email {
+      margin-bottom: 0rem;
+      backface-visibility: hidden;
+    }
   }
+
+
 }

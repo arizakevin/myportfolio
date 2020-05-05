@@ -11,6 +11,13 @@
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
+  padding-top: 5%;
+
+  @include respond(big-desktop) {
+    height: 100%;
+    -webkit-clip-path: none;
+    clip-path: none;
+  }
 
   @include respond(tab-land) {
     height: 100%;
@@ -39,19 +46,19 @@
 
     img {
       @include respond(big-desktop) {
-        width: 55%;
+        width: 75%;
       }
       @include respond(tab-land) {
-        width: 55%;
+        width: 75%;
       }
       @include respond(tab-port) {
-       width: 55%;
+       width: 75%;
       }
       @include respond(tab-port-sm) {
-        width: 50%;
+        width: 70%;
       }
       @include respond(phone) {
-        width: 50%;
+        width: 70%;
       }
     }
 
@@ -66,14 +73,7 @@
       }
 
       &-text {
-        text-align: left;
-
-        @include respond(tab-port) {
-          text-align: left;
-        }
-        @include respond(tab-port-sm) {
-          text-align: center;
-        }
+        text-align: justify;
 
         &--important {
           background: darken($secondary-color, 1%);

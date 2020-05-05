@@ -73,7 +73,8 @@
 /* Resume Style */
 .cta-btn--resume {
   color: $white-color;
-  border: 2px solid $white-color;
+  border: 1.5px solid $white-color;
+  margin-bottom: 2.5rem;
 
   &::after {
     background: $white-color;
