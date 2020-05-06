@@ -8,28 +8,9 @@
   color: $white-color;
   height: 100%;
   border-top: 0px;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
   padding-bottom: 10%;
-  padding-top: 5%;
-
-  @include respond(big-desktop) {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
-
-  @include respond(tab-land) {
-    height: 100%;
-    -webkit-clip-path: none;
-    clip-path: none;
-  }
 
   .about-wrapper {
-    @include respond(phone) {
-      padding-bottom: 5rem;
-    }
-
     &__image {
       display: flex;
       height: 100%;
@@ -37,19 +18,25 @@
       justify-content: center;
 
       @include respond(tab-land) {
-        height: 100%;
+        height: 90%;
       }
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
+        padding-top:2rem;
+        padding-bottom: 2rem;
+      }
+      @include respond(phone) {
+        padding-top: 1.5rem;
+        padding-bottom: 3rem;
       }
     }
 
     img {
       @include respond(big-desktop) {
-        width: 75%;
+        width: 400px;
       }
       @include respond(tab-land) {
-        width: 75%;
+        width: 85%;
       }
       @include respond(tab-port) {
        width: 75%;
@@ -69,11 +56,25 @@
       flex-direction: column;
 
       @include respond(tab-port-sm) {
+        padding: 3rem 0 3rem 0;
         align-items: center;
       }
 
+      @include respond(phone) {
+          padding: 3rem 0 3rem 0;
+      }
+      
       &-text {
         text-align: justify;
+
+        @include respond(tab-port-sm) {
+          padding: 1rem 3rem 1rem 3rem;
+        }
+
+        @include respond(phone) {
+          margin: 0;
+          padding: 1rem 3rem 1rem 3rem;
+        }
 
         &--important {
           background: darken($secondary-color, 1%);

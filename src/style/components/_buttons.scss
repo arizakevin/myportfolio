@@ -30,19 +30,13 @@
   );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  border: 2px solid transparent;
+  border: 3px solid transparent;
   border-image: linear-gradient(
     135deg,
     $primary-color 0%,
     $secondary-color 100%
   );
   border-image-slice: 1;
-  // Responsive Button hero style
-  @include respond(phone) {
-    background-image: none;
-    border: 2px solid $secondary-color;
-    -webkit-text-fill-color: $secondary-color;
-  }
 
   &::after {
     background-image: linear-gradient(
@@ -50,22 +44,37 @@
       $primary-color 0%,
       $secondary-color 100%
     );
-    // Responsive Button hero style
-    @include respond(phone) {
-      background-image: none;
-    }
   }
 
   &:hover {
     -webkit-text-fill-color: $white-color;
     text-decoration: none;
-    // Responsive Button hover hero style
-    @include respond(phone) {
-      -webkit-text-fill-color: $secondary-color;
-    }
 
     &::after {
       width: 100%;
+    }
+  }
+
+  @include respond(phone) {
+    padding: 2rem;
+    border: 5px;
+    background: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
+    -webkit-text-fill-color: $white-color;
+    margin-top: 2rem;
+    &::after {
+      background-image: none;
+    }
+    &:hover {
+      -webkit-text-fill-color: none;
+      text-decoration: none;
+      &::after {
+        background-image: none;
+        width: none;
+      }
     }
   }
 }
@@ -74,6 +83,7 @@
 .cta-btn--resume {
   color: $white-color;
   border: 1.5px solid $white-color;
+  margin-top:2rem;
   margin-bottom: 2.5rem;
 
   &::after {
@@ -86,6 +96,26 @@
 
     &::after {
       width: 100%;
+    }
+  }
+
+  @include respond(phone) {
+    color: $secondary-color;
+    padding: 2rem;
+    border: 5px;
+    border-image: linear-gradient(
+      135deg,
+      $primary-color 0%,
+      $secondary-color 100%
+    );
+    background: $white-color;
+    -webkit-text-fill-color: $secondary-color;
+    margin-top: 2rem;
+    &:hover {
+      background-image: none;
+      &::after {
+        background-image: none;
+      }
     }
   }
 }

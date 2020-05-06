@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 html {
-  font-size: 55%;
+  font-size: 65%;
+  @include respond(big-desktop) {
+    font-size: 65%;
+  }
+  @include respond(tab-land) {
+    font-size: 62%;
+  }
+  @include respond(tab-port) {
+    font-size: 58%;
+  }
+  @include respond(tab-port-sm) {
+    font-size: 55%;
+  }
+  @include respond(phone) {
+    font-size: 50%;
+  }
 }
 
 body {

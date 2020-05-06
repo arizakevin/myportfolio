@@ -21,7 +21,6 @@
     <script>
       ScrollReveal({ reset: false });
     </script>
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   </head>
 
@@ -61,7 +60,7 @@
                 data-tilt
                 class="img-fluid rounded shadow-lg"
                 height="auto"
-                width="250px"
+                width="450px"
                 src="./assets/profile4.jpg"
                 alt="Profile Image"
               />
@@ -123,7 +122,7 @@
                     <img data-tilt
                       class="img-fluid thumbnail rounded" 
                       height="auto"
-                      width="350px"
+                      width="370px"
                       src="./assets/covid19charts.png" />
                 </a>
               </div>
@@ -155,13 +154,14 @@
                     <img data-tilt
                       class="img-fluid thumbnail rounded" 
                       height="auto"
-                      width="350px"
+                      width="370px"
                       src="./assets/recipes.png" />
                 </a>
               </div>
             </div>
           </div>
           <!-- /END Project -->
+
         </div>
       </div>
     </section>
@@ -321,12 +321,16 @@
           </a>
         </div>
         <hr />
-        <script type="text/javascript">
-          particlesJS.load('particles-js', '../public/assets/parti-cfg.json', function() {
-            console.log('callback - particles.js config loaded');
-          });
-        </script>
-        <div id="root"></div>
+      </div>
+    </footer>
+    <!--
+    <div id="root"></div>
+    -->
+    <script type="text/javascript">
+      particlesJS.load('particles-js', './public/assets/parti-cfg.json', function() {
+        console.log('callback - particles.js config loaded');
+      });
+    </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="/__/firebase/7.14.2/firebase-app.js"></script>
     
@@ -335,6 +339,6 @@
     <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
     
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>        
+    <script src="/__/firebase/init.js"></script>         
   </body>
 </html>

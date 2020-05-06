@@ -1,9 +1,9 @@
 #projects {
   color: $dark-blue-text;
   margin-top: -10rem;
-  padding-top: 15rem;
+  padding-top: 5%;
   padding-bottom: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 
   @include respond(tab-land) {
     margin-top: 0;
