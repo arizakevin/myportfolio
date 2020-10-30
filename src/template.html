@@ -46,13 +46,12 @@
     <!-- /END Hero Section -->
 
     <!-- **** About Section **** -->
-
+    <div id="particles-js"></div>
     <section id="about">
       <div class="container">
         <h2 class="section-title">
           About me
         </h2>
-        <div id="particles-js"></div>
         <div class="row about-wrapper">
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__image">
@@ -78,7 +77,7 @@
                 I love programming and that's what I do almost every day, but when I am not programming or learning about it, I spend time with my family, read a good book, or ride my bike.
               </p>
               <span class="d-flex mt-3">
-                <a target="_blank" class="cta-btn cta-btn--resume" href="https://www.dropbox.com/s/tyzjd894c84kgfm/Kevin%20Ariza%20Full%20Stack%20Developer.pdf?dl=0">
+                <a target="_blank" class="cta-btn cta-btn--resume" href="https://www.dropbox.com/s/39zlmxdvm36h6nt/Developer%20CV%20EN.pdf?dl=0">
                   Resume
                 </a>
               </span>
@@ -102,7 +101,36 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Covid-19 Charts</h3>
+                <h3 class="project-wrapper__text-title">PagoLinea App (Mobile)</h3>
+                <div>
+                  <p class="mb-4">
+                    I made this app for a company based in Argentina, it is a payment's processor. I used React Native for making this. It is full of cool features.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://play.google.com/store/apps/details?id=com.pagolineaapp&hl=es_419">
+                  See Live
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://play.google.com/store/apps/details?id=com.pagolineaapp&hl=es_419" target="_blank">
+                    <img data-tilt
+                      class="img-fluid thumbnail rounded" 
+                      height="auto"
+                      width="370"
+                      src="./assets/1.jpg" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Covid-19 Charts (Web)</h3>
                 <div>
                   <p class="mb-4">
                     Wanting to craft a good app with charts and looking to help the community in the current world situation, I've built a web app that shows simple and clear charts of COVID-19 global figures, I made it with ReacJS and ChartJS, using the amazing API that Kyle Redelinghuys and Kyle Hauptfleisch built.
@@ -134,7 +162,7 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Recipes App</h3>
+                <h3 class="project-wrapper__text-title">Recipes App (Web)</h3>
                 <div>
                   <p class="mb-4">
                     This is a web app of recipes in which the user can search between thousands of recipes and get complete information about them, including calories and ingredients, save or delete the recipes in its account, and also, the user can go to the original site of the recipe to get even more information. I built the app using ReactJS, ExpressJS, and PostgreSQL and I used the spoonacular's API to fetch the data. 
@@ -174,107 +202,139 @@
         </h2>
         <div class="technology-wrapper">
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title"
-                   src="https://img.icons8.com/color/100/000000/html-5.png"
-              />
-              <h3 class="name section-title">HTML5</h3>
+                <img data-tilt
+                    class="icon section-title"
+                    src="https://img.icons8.com/color/100/000000/html-5.png"
+                />
+                <h3 class="name section-title">HTML5</h3>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title"
-                   src="https://img.icons8.com/color/100/000000/css3.png"
-              />
-              <h3 class="name section-title">CSS3</h3>
+                <img data-tilt
+                    class="icon section-title"
+                    src="https://img.icons8.com/color/100/000000/css3.png"
+                />
+                <h3 class="name section-title">CSS3</h3>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title"
-                   src="https://img.icons8.com/color/100/000000/javascript.png"
-              />
-              <p class="name section-title">JavaScript</p>
+                <img data-tilt
+                    class="icon section-title"
+                    src="https://img.icons8.com/color/100/000000/javascript.png"
+                />
+                <p class="name section-title">JavaScript</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title"
-                   src="https://img.icons8.com/color/100/000000/react-native.png"
-              />
-              <p class="name section-title">ReactJS</p>
+                <img data-tilt
+                    class="icon section-title"
+                    src="https://img.icons8.com/color/100/000000/react-native.png"
+                />
+                <p class="name section-title">ReactJS</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/officel/100/000000/doughnut-chart.png"
-              />
-              <p class="name section-title">ChartJS</p>
+                <img 
+                  class="icon section-title" 
+                  src="https://img.icons8.com/nolan/100/react-native.png"
+                />
+                <p class="name section-title">React Native</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title"
-                   src="https://img.icons8.com/color/100/000000/nodejs.png"
-              />
-              <p class="name section-title">NodeJS</p>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/officel/100/000000/doughnut-chart.png"
+                />
+                <p class="name section-title">ChartJS</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/npm.png"
-              />
-              <p class="name section-title">NPM</p>
+                <img 
+                  class="icon section-title" 
+                  src="https://img.icons8.com/dusk/100/000000/postman-api.png"
+                />
+                <p class="name section-title">Postman</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/command-line.png"
-              />
-              <p class="name section-title">CMD</p>
+                <img data-tilt
+                    class="icon section-title"
+                    src="https://img.icons8.com/color/100/000000/nodejs.png"
+                />
+                <p class="name section-title">NodeJS</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/postgreesql.png"
-              />
-              <p class="name section-title">PostgreSQL</p>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/color/100/000000/npm.png"
+                />
+                <p class="name section-title">NPM</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/github--v1.png"
-              />
-              <p class="name section-title">GitHub</p>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/color/100/000000/command-line.png"
+                />
+                <p class="name section-title">CMD</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/git.png"
-              />
-              <p class="name section-title">Git</p>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/color/100/000000/postgreesql.png"
+                />
+                <p class="name section-title">PostgreSQL</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/heroku.png"
-              />
-              <p class="name section-title">Heroku</p>
+                <img data-tilt
+                  class="icon section-title" 
+                  src="https://img.icons8.com/color/100/000000/github--v1.png"
+                />
+                <p class="name section-title">GitHub</p>
               </div>
 
               <div className='box'>
-              <img data-tilt
-                   class="icon section-title" 
-                   src="https://img.icons8.com/color/100/000000/trello.png"
-              />
-              <p class="name section-title">Trello</p>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/color/100/000000/git.png"
+                />
+                <p class="name section-title">Git</p>
+              </div>
+
+              <div className='box'>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/fluent/100/000000/visual-studio-code-2019.png"
+                />
+                <p class="name section-title">VS Code</p>
+              </div>
+
+              <div className='box'>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/color/100/000000/heroku.png"
+                />
+                <p class="name section-title">Heroku</p>
+              </div>
+
+              <div className='box'>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/cute-clipart/100/000000/api.png"
+                />
+                <p class="name section-title">REST APIs</p>
+              </div>
+
+              <div className='box'>
+                <img data-tilt
+                    class="icon section-title" 
+                    src="https://img.icons8.com/color/100/000000/trello.png"
+                />
+                <p class="name section-title">Trello</p>
               </div>
         </div>
       </div>
@@ -332,13 +392,13 @@
       });
     </script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-    <script src="/__/firebase/7.14.2/firebase-app.js"></script>
-    
+    <script src="/__/firebase/8.0.0/firebase-app.js"></script>
+
     <!-- TODO: Add SDKs for Firebase products that you want to use
-         https://firebase.google.com/docs/web/setup#available-libraries -->
-    <script src="/__/firebase/7.14.2/firebase-analytics.js"></script>
-    
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.0.0/firebase-analytics.js"></script>
+
     <!-- Initialize Firebase -->
-    <script src="/__/firebase/init.js"></script>         
+    <script src="/__/firebase/init.js"></script>       
   </body>
 </html>
