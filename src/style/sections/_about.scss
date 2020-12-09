@@ -33,19 +33,19 @@
 
     img {
       @include respond(big-desktop) {
-        width: 400px;
+        width: 350px;
       }
       @include respond(tab-land) {
-        width: 85%;
-      }
-      @include respond(tab-port) {
         width: 75%;
       }
-      @include respond(tab-port-sm) {
+      @include respond(tab-port) {
         width: 70%;
       }
+      @include respond(tab-port-sm) {
+        width: 65%;
+      }
       @include respond(phone) {
-        width: 70%;
+        width: 60%;
       }
     }
 
@@ -63,7 +63,7 @@
       @include respond(phone) {
           padding: 3rem 0 3rem 0;
       }
-      
+
       &-text {
         text-align: justify;
 
