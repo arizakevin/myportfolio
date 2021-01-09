@@ -8,7 +8,7 @@
   color: $white-color;
   height: 100%;
   border-top: 0px;
-  padding-bottom: 10%;
+  padding-bottom: 15%;
 
   .about-wrapper {
     &__image {
@@ -16,10 +16,7 @@
       height: 100%;
       align-items: center;
       justify-content: center;
-
-      @include respond(tab-land) {
-        height: 90%;
-      }
+      
       @include respond(tab-port-sm) {
         padding-bottom: 6.4rem;
         padding-top:2rem;
